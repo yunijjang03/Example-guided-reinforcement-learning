@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+logs/
+videos/
+data_storage/
+*.pt
+*.pth
+*.onnx
+*.mp4
+.omniverse/
