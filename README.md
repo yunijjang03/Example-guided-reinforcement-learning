@@ -25,8 +25,9 @@ The hierarchical evaluator runs the pickup policy until a stable physical grasp 
 - `source/isaaclab_tasks/.../g1_box_mimic/`: Isaac Lab task and PPO configuration
 - `scripts/play_g1_box_hierarchical.py`: pickup-to-placement policy switching
 - `scripts/merge_twist_nvidia_hands.py`: reference-motion preprocessing
+- `docs/USAGE.md`: installation, data preparation, training, and streaming commands
 
-Detailed installation, data preparation, training, and streaming commands are included on the feature branch with the implementation.
+See [Usage](docs/USAGE.md) for the complete workflow and reproduced transition result.
 
 ## Data and checkpoints
 
