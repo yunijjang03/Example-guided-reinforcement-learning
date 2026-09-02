@@ -121,6 +121,21 @@ class G1BoxPlaceEnvCfg(G1BoxMimicEnvCfg):
 
 
 @configclass
+class G1BoxPlaceStrictEnvCfg(G1BoxPlaceEnvCfg):
+    """Configuration for stricter placement fine-tuning."""
+
+    success_distance = 0.05
+    success_height_error = 0.03
+    success_speed = 0.06
+    success_hold_steps = 60
+    final_success_distance = 0.045
+    final_success_height_error = 0.025
+    final_success_speed = 0.04
+    release_duration_steps = 75
+    goal_reward_distance_scale = 0.10
+
+
+@configclass
 class G1BoxMixedEnvCfg(G1BoxPlaceEnvCfg):
     """Configuration for mixed pickup and strict placement training."""
 

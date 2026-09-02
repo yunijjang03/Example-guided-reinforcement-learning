@@ -31,6 +31,16 @@ gym.register(
 )
 
 gym.register(
+    id="Isaac-G1-Box-Place-Strict-Direct-v0",
+    entry_point=f"{__name__}.g1_box_mimic_env:G1BoxMimicEnv",
+    disable_env_checker=True,
+    kwargs={
+        "env_cfg_entry_point": f"{__name__}.g1_box_mimic_env_cfg:G1BoxPlaceStrictEnvCfg",
+        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:G1BoxMimicPPORunnerCfg",
+    },
+)
+
+gym.register(
     id="Isaac-G1-Box-Mixed-Direct-v0",
     entry_point=f"{__name__}.g1_box_mimic_env:G1BoxMimicEnv",
     disable_env_checker=True,
